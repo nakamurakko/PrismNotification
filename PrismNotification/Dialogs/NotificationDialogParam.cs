@@ -8,7 +8,7 @@ namespace PrismNotification.Dialogs
     /// <summary>
     /// NotificationDialog パラメーター用クラス。
     /// </summary>
-    public sealed class NotificationDialogParam
+    sealed class NotificationDialogParam
     {
         /// <summary>
         /// コンストラクター。非公開。

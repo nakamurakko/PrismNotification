@@ -16,7 +16,7 @@ namespace PrismNotification.Dialogs
     /// <summary>
     /// NotificationDialog.xaml の相互作用ロジック
     /// </summary>
-    public partial class NotificationDialog : UserControl
+    sealed partial class NotificationDialog : UserControl
     {
         public NotificationDialog()
         {

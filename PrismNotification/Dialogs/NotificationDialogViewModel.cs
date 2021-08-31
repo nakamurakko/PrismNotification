@@ -87,19 +87,19 @@ namespace PrismNotification.Dialogs
         {
             ButtonResult result = ButtonResult.None;
 
-            if ("Yes".Equals(parameter?.ToLower()))
+            if (nameof(NotificationDialogButtons.Yes).ToLower().Equals(parameter?.ToLower()))
             {
                 result = ButtonResult.Yes;
             }
-            else if ("No".Equals(parameter?.ToLower()))
+            else if (nameof(NotificationDialogButtons.No).ToLower().Equals(parameter?.ToLower()))
             {
                 result = ButtonResult.No;
             }
-            else if ("OK".Equals(parameter?.ToLower()))
+            else if (nameof(NotificationDialogButtons.Ok).ToLower().Equals(parameter?.ToLower()))
             {
                 result = ButtonResult.OK;
             }
-            else if ("Cancel".Equals(parameter?.ToLower()))
+            else if (nameof(NotificationDialogButtons.Cancel).ToLower().Equals(parameter?.ToLower()))
             {
                 result = ButtonResult.Cancel;
             }

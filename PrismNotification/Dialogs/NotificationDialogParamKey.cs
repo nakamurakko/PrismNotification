@@ -7,7 +7,7 @@ namespace PrismNotification.Dialogs
     /// <summary>
     /// NotificationDialog パラメーターキー用クラス。
     /// </summary>
-    public sealed class NotificationDialogParamKey
+    sealed class NotificationDialogParamKey
     {
         /// <summary>
         /// ダイアログに表示するメッセージ。
