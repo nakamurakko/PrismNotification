@@ -14,7 +14,7 @@ using System.Windows.Shapes;
 namespace PrismNotification.Dialogs
 {
     /// <summary>
-    /// NotificationDialog.xaml の相互作用ロジック
+    /// NotificationDialog
     /// </summary>
     sealed partial class NotificationDialog : UserControl
     {
