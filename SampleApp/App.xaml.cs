@@ -17,8 +17,7 @@ namespace SampleApp
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            //// https://prismlibrary.com/docs/wpf/dialog-service.html
-            //containerRegistry.RegisterDialog<NotificationDialog, NotificationDialogViewModel>();
+            // https://prismlibrary.com/docs/wpf/dialog-service.html
             NotificationDialogService.RegisterDialog(containerRegistry);
         }
     }
