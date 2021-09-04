@@ -11,9 +11,9 @@ namespace PrismNotification.Dialogs
     public enum NotificationDialogButtons
     {
         Yes = 1,
-        No = 2 << 1,
-        Ok = 2 << 2,
-        Cancel = 2 << 3,
+        No = 2,
+        Ok = No << 1,
+        Cancel = Ok << 1,
         YesNo = Yes + No,
         OkCancel = Ok + Cancel,
         YesNoCancel = Yes + No + Cancel
