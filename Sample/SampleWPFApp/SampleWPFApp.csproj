@@ -12,7 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="PrismNotification.WPF">
-      <HintPath>..\..\PrismNotification.WPF\bin\Debug\net5.0-windows\PrismNotification.WPF.dll</HintPath>
+      <HintPath>..\..\PrismNotification.WPF\bin\Release\net5.0-windows\PrismNotification.WPF.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
