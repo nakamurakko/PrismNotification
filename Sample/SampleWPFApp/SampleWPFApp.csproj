@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>SampleWPFApp</AssemblyName>
+    <Authors>nakamurakko</Authors>
+    <Copyright>@ nakamurakko</Copyright>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PrismNotification.WPF">
+      <HintPath>..\..\PrismNotification.WPF\bin\Debug\net5.0-windows\PrismNotification.WPF.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
