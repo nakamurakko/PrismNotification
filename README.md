@@ -1,7 +1,7 @@
-# PrismNotification
+# PrismNotification.WPF
 
-Prism Library の [Dialog Service](https://prismlibrary.com/docs/wpf/dialog-service.html) をベースに、メッセージダイアログを作成しました。
-動作は SampleApp プロジェクトで確認できます。
+WPF 用 Prism Library の [Dialog Service](https://prismlibrary.com/docs/wpf/dialog-service.html) をベースに、メッセージダイアログを作成しました。
+動作は SampleWPFApp プロジェクトで確認できます。
 
 ## 事前準備
 
