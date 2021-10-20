@@ -4,6 +4,9 @@
     <UseWPF>true</UseWPF>
     <AssemblyName>PrismNotification.WPF</AssemblyName>
     <RootNamespace>PrismNotification</RootNamespace>
+    <Authors>nakamurakko</Authors>
+    <Copyright>@ nakamurakko</Copyright>
+    <Company />
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Prism.Wpf" Version="8.1.97" />
