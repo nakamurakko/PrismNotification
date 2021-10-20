@@ -3,18 +3,48 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrismNotification", "PrismNotification\PrismNotification.csproj", "{28EAD87E-B875-4084-9F94-8A0FC1C24F7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrismNotification.WPF", "PrismNotification.WPF\PrismNotification.WPF.csproj", "{B900CB9C-F505-4C7D-AF3C-90198A3050FB}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "PrismNotificationShared", "PrismNotificationShared\PrismNotificationShared.shproj", "{2AEAB4B5-6895-4D3D-85F1-30312A85D145}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		PrismNotificationShared\PrismNotificationShared.projitems*{2aeab4b5-6895-4d3d-85f1-30312a85d145}*SharedItemsImports = 13
+		PrismNotificationShared\PrismNotificationShared.projitems*{b900cb9c-f505-4c7d-af3c-90198a3050fb}*SharedItemsImports = 5
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{28EAD87E-B875-4084-9F94-8A0FC1C24F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{28EAD87E-B875-4084-9F94-8A0FC1C24F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{28EAD87E-B875-4084-9F94-8A0FC1C24F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{28EAD87E-B875-4084-9F94-8A0FC1C24F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Debug|ARM.Build.0 = Debug|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Debug|x64.Build.0 = Debug|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Debug|x86.Build.0 = Debug|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Release|ARM.ActiveCfg = Release|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Release|ARM.Build.0 = Release|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Release|ARM64.Build.0 = Release|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Release|x64.ActiveCfg = Release|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Release|x64.Build.0 = Release|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Release|x86.ActiveCfg = Release|Any CPU
+		{B900CB9C-F505-4C7D-AF3C-90198A3050FB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

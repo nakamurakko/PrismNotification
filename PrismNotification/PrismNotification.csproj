@@ -1,11 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net5.0-windows</TargetFramework>
-    <UseWPF>true</UseWPF>
+    <TargetFramework>net5.0</TargetFramework>
     <AssemblyName>PrismNotification</AssemblyName>
     <Authors>nakamurakko</Authors>
   </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
-  </ItemGroup>
 </Project>
