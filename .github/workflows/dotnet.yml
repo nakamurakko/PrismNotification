@@ -20,7 +20,5 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
     - name: Publish PrismNotification.WPF
       run: dotnet nuget push PrismNotification.WPF/bin/Release/PrismNotification.WPF.*.nupkg --api-key ${{secrets.NUGET_API_KEY}} --source https://api.nuget.org/v3/index.json
