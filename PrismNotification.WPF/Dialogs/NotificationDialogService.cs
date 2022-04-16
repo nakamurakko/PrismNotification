@@ -38,7 +38,7 @@ namespace PrismNotification.Dialogs
         /// IDialogService.ShowDialog を呼び出す。
         /// https://prismlibrary.com/docs/wpf/dialog-service.html#using-the-dialog-service
         /// </remarks>
-        public static void ShowDialog(IDialogService dialogService, string message, NotificationDialogButtons buttons, Action<IDialogResult> callbackAction)
+        public static void ShowDialog(IDialogService dialogService, string message, NotificationDialogButtons buttons, Action<IDialogResult> callbackAction = null)
         {
             dialogService.ShowDialog(
                 nameof(NotificationDialog),
