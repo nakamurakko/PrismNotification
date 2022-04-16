@@ -9,10 +9,6 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Prism.Unity" Version="8.1.97" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="PrismNotification.WPF">
-      <HintPath>..\..\PrismNotification.WPF\bin\Release\net6.0-windows\PrismNotification.WPF.dll</HintPath>
-    </Reference>
+    <PackageReference Include="PrismNotification.WPF" Version="1.0.2" />
   </ItemGroup>
 </Project>
