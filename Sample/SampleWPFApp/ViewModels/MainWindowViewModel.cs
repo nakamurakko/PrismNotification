@@ -30,6 +30,14 @@ namespace SampleWPFApp.ViewModels
             set => SetProperty(ref _showMessageCommand, value);
         }
 
+        private DelegateCommand _showOkMessageCommand;
+
+        public DelegateCommand ShowOkMessageCommand
+        {
+            get => _showOkMessageCommand;
+            set => SetProperty(ref _showOkMessageCommand, value);
+        }
+
         /// <summary>
         /// コンストラクター。
         /// </summary>
@@ -42,8 +50,12 @@ namespace SampleWPFApp.ViewModels
             this._dialogService = dialogService;
 
             ShowMessageCommand = new DelegateCommand(() => ShowMessageCommandExecute());
+            ShowOkMessageCommand = new DelegateCommand(() => ShowOkMessageCommandExecute());
         }
 
+        /// <summary>
+        /// Yes、No、Cancel を表示するメッセージダイアログを表示する。
+        /// </summary>
         private void ShowMessageCommandExecute()
         {
             NotificationDialogService.ShowDialog(
@@ -67,6 +79,14 @@ namespace SampleWPFApp.ViewModels
                             break;
                     }
                 });
+        }
+
+        /// <summary>
+        /// OK ボタンのみのメッセージダイアログを表示する。
+        /// </summary>
+        private void ShowOkMessageCommandExecute()
+        {
+            NotificationDialogService.ShowDialog(_dialogService, "OK Message.", NotificationDialogButtons.Ok);
         }
     }
 }

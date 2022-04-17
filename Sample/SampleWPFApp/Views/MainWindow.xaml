@@ -20,14 +20,21 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
 
         <Button Grid.Row="0"
-                Content="ShowMessage"
+                Content="Show Message"
                 Command="{Binding ShowMessageCommand}"
                 HorizontalAlignment="Center" />
         <TextBlock Grid.Row="1"
                    Text="{Binding ClickResult}" />
+
+        <Button Grid.Row="2"
+                Content="Show OK Message"
+                Command="{Binding ShowOkMessageCommand}"
+                HorizontalAlignment="Center" />
+
     </Grid>
 
 </Window>
