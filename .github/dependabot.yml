@@ -14,3 +14,8 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+
+  - package-ecosystem: "nuget" # See documentation for possible values
+    directory: "/Sample" # Location of package manifests
+    schedule:
+      interval: "weekly"
