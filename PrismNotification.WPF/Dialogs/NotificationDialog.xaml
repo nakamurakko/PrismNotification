@@ -57,25 +57,25 @@
                     Orientation="Horizontal">
             <Button Command="{Binding CloseDialogCommand}"
                     CommandParameter="Yes"
-                    Content="Yes"
+                    Content="{Binding YesButtonTitle}"
                     IsDefault="True"
                     Style="{StaticResource ButtonStyle}"
                     Visibility="{Binding IsYesButtonVisible, Converter={StaticResource BooleanToVisibility}}" />
             <Button Command="{Binding CloseDialogCommand}"
                     CommandParameter="No"
-                    Content="No"
+                    Content="{Binding NoButtonTitle}"
                     IsDefault="False"
                     Style="{StaticResource ButtonStyle}"
                     Visibility="{Binding IsYesButtonVisible, Converter={StaticResource BooleanToVisibility}}" />
             <Button Command="{Binding CloseDialogCommand}"
                     CommandParameter="OK"
-                    Content="OK"
+                    Content="{Binding OkButtonTitle}"
                     IsDefault="True"
                     Style="{StaticResource ButtonStyle}"
                     Visibility="{Binding IsOkButtonVisible, Converter={StaticResource BooleanToVisibility}}" />
             <Button Command="{Binding CloseDialogCommand}"
                     CommandParameter="Cancel"
-                    Content="Cancel"
+                    Content="{Binding CancelButtonTitle}"
                     IsDefault="False"
                     Style="{StaticResource ButtonStyle}"
                     Visibility="{Binding IsCancelButtonVisible, Converter={StaticResource BooleanToVisibility}}" />

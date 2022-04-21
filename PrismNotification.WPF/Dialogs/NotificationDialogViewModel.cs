@@ -1,6 +1,7 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Services.Dialogs;
+using PrismNotification.WPF.Properties;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,6 +17,14 @@ namespace PrismNotification.Dialogs
     class NotificationDialogViewModel : BindableBase, IDialogAware
     {
         public string Title => "Notification";
+
+        public string YesButtonTitle => Resources.YES_BUTTON_TITLE;
+
+        public string NoButtonTitle => Resources.NO_BUTTON_TITLE;
+
+        public string OkButtonTitle => Resources.OK_BUTTON_TITLE;
+
+        public string CancelButtonTitle => Resources.CANCEL_BUTTON_TITLE;
 
         private string _message;
         public string Message
