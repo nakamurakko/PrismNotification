@@ -58,3 +58,12 @@ OkCancel | OK ボタン、 Cancel ボタンを表示。
 YesNoCancel | Yes ボタン、 No ボタン、 Cancel ボタンを表示。
 
 `NotificationDialogButtons.Ok` にすれば、 OK ボタンのみ表示します。
+
+## 多言語対応
+
+ボタン名のデフォルト表示は英語です。
+英語以外の表示できる言語は下記の通りです。
+
+コード | 言語
+---|---
+ja | 日本語
