@@ -11,8 +11,8 @@
     <PackageProjectUrl>https://github.com/nakamurakko/PrismNotification</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>Prism;WPF</PackageTags>
-    <Version>1.0.4</Version>
-    <Description>Notification dialog service for Prism WPF</Description>
+    <Version>1.0.5</Version>
+    <Description>Notification dialog for Prism WPF</Description>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\README.md">
