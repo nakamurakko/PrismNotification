@@ -1,38 +1,34 @@
 ﻿using Prism.Services.Dialogs;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace PrismNotification.Dialogs
+namespace PrismNotification.Dialogs;
+
+/// <summary>
+/// NotificationDialog パラメーター用クラス。
+/// </summary>
+sealed class NotificationDialogParam
 {
     /// <summary>
-    /// NotificationDialog パラメーター用クラス。
+    /// コンストラクター。非公開。
     /// </summary>
-    sealed class NotificationDialogParam
+    private NotificationDialogParam()
     {
-        /// <summary>
-        /// コンストラクター。非公開。
-        /// </summary>
-        private NotificationDialogParam()
+
+    }
+
+    /// <summary>
+    /// ダイアログメッセージを設定した DialogParameters を生成する。
+    /// </summary>
+    /// <param name="message">ダイアログメッセージ。</param>
+    /// <param name="dialogButtons">ダイアログに表示するボタン。</param>
+    /// <returns>DialogParameters。</returns>
+    public static DialogParameters CreateDialogMessageParam(string message, NotificationDialogButtons dialogButtons = NotificationDialogButtons.Ok)
+    {
+        DialogParameters result = new DialogParameters()
         {
+            { NotificationDialogParamKey.DialogMessage, message },
+            { NotificationDialogParamKey.DialogButtons, dialogButtons }
+        };
 
-        }
-
-        /// <summary>
-        /// ダイアログメッセージを設定した DialogParameters を生成する。
-        /// </summary>
-        /// <param name="message">ダイアログメッセージ。</param>
-        /// <param name="dialogButtons">ダイアログに表示するボタン。</param>
-        /// <returns>DialogParameters。</returns>
-        public static DialogParameters CreateDialogMessageParam(string message, NotificationDialogButtons dialogButtons = NotificationDialogButtons.Ok)
-        {
-            var result = new DialogParameters();
-
-            result.Add(NotificationDialogParamKey.DialogMessage, message);
-
-            result.Add(NotificationDialogParamKey.DialogButtons, dialogButtons);
-
-            return result;
-        }
+        return result;
     }
 }
