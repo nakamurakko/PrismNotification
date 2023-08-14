@@ -1,49 +1,44 @@
 ﻿using Prism.Ioc;
 using Prism.Services.Dialogs;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace PrismNotification.Dialogs
+namespace PrismNotification.Dialogs;
+
+/// <summary>
+/// NotificationDialog を使用するための処理一覧。
+/// </summary>
+public class NotificationDialogService
 {
     /// <summary>
-    /// NotificationDialog を使用するための処理一覧。
+    /// NotificationDialog、 NotificationDialogViewModel を IContainerRegistry を使用して登録する。
+    /// App.RegisterTypes で 使用する。
     /// </summary>
-    public class NotificationDialogService
+    /// <param name="containerRegistry">App.RegisterTypes の引数 IContainerRegistry を指定する。</param>
+    /// <remarks>
+    /// https://prismlibrary.com/docs/wpf/dialog-service.html
+    /// </remarks>
+    public static void RegisterDialog(IContainerRegistry containerRegistry)
     {
-        /// <summary>
-        /// NotificationDialog、 NotificationDialogViewModel を IContainerRegistry を使用して登録する。
-        /// App.RegisterTypes で 使用する。
-        /// </summary>
-        /// <param name="containerRegistry">App.RegisterTypes の引数 IContainerRegistry を指定する。</param>
-        /// <remarks>
-        /// https://prismlibrary.com/docs/wpf/dialog-service.html
-        /// </remarks>
-        public static void RegisterDialog(IContainerRegistry containerRegistry)
-        {
-            // https://prismlibrary.com/docs/wpf/dialog-service.html
-            containerRegistry.RegisterDialog<NotificationDialog, NotificationDialogViewModel>();
-        }
+        // https://prismlibrary.com/docs/wpf/dialog-service.html
+        containerRegistry.RegisterDialog<NotificationDialog, NotificationDialogViewModel>();
+    }
 
-        /// <summary>
-        /// メッセージボックスを表示する。
-        /// </summary>
-        /// <param name="dialogService">IDialogService</param>
-        /// <param name="message">メッセージ文字列。</param>
-        /// <param name="buttons">応答ボタン。</param>
-        /// <param name="callbackAction">メッセージ応答後に呼び出すコールバック関数。</param>
-        /// <remarks>
-        /// IDialogService.ShowDialog を呼び出す。
-        /// https://prismlibrary.com/docs/wpf/dialog-service.html#using-the-dialog-service
-        /// </remarks>
-        public static void ShowDialog(IDialogService dialogService, string message, NotificationDialogButtons buttons, Action<IDialogResult> callbackAction = null)
-        {
-            dialogService.ShowDialog(
-                nameof(NotificationDialog),
-                NotificationDialogParam.CreateDialogMessageParam(message, buttons),
-                callbackAction);
-        }
+    /// <summary>
+    /// メッセージボックスを表示する。
+    /// </summary>
+    /// <param name="dialogService">IDialogService</param>
+    /// <param name="message">メッセージ文字列。</param>
+    /// <param name="buttons">応答ボタン。</param>
+    /// <param name="callbackAction">メッセージ応答後に呼び出すコールバック関数。</param>
+    /// <remarks>
+    /// IDialogService.ShowDialog を呼び出す。
+    /// https://prismlibrary.com/docs/wpf/dialog-service.html#using-the-dialog-service
+    /// </remarks>
+    public static void ShowDialog(IDialogService dialogService, string message, NotificationDialogButtons buttons, Action<IDialogResult> callbackAction = null)
+    {
+        dialogService.ShowDialog(
+            nameof(NotificationDialog),
+            NotificationDialogParam.CreateDialogMessageParam(message, buttons),
+            callbackAction);
     }
 }
