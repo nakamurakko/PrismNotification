@@ -1,6 +1,6 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
-using Prism.Services.Dialogs;
+using Prism.Dialogs;
 using PrismNotification.Dialogs;
 
 namespace SampleWPFApp.ViewModels;

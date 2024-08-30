@@ -1,5 +1,5 @@
-﻿using Prism.Ioc;
-using Prism.Services.Dialogs;
+﻿using Prism.Dialogs;
+using Prism.Ioc;
 using System;
 
 namespace PrismNotification.Dialogs;
@@ -7,8 +7,9 @@ namespace PrismNotification.Dialogs;
 /// <summary>
 /// NotificationDialog を使用するための処理一覧。
 /// </summary>
-public class NotificationDialogService
+public sealed class NotificationDialogService
 {
+
     /// <summary>
     /// NotificationDialog、 NotificationDialogViewModel を IContainerRegistry を使用して登録する。
     /// App.RegisterTypes で 使用する。
@@ -41,4 +42,5 @@ public class NotificationDialogService
             NotificationDialogParam.CreateDialogMessageParam(message, buttons),
             callbackAction);
     }
+
 }

@@ -1,18 +1,18 @@
-﻿using Prism.Services.Dialogs;
+﻿using Prism.Dialogs;
 
 namespace PrismNotification.Dialogs;
 
 /// <summary>
 /// NotificationDialog パラメーター用クラス。
 /// </summary>
-sealed class NotificationDialogParam
+internal sealed class NotificationDialogParam
 {
+
     /// <summary>
     /// コンストラクター。非公開。
     /// </summary>
     private NotificationDialogParam()
     {
-
     }
 
     /// <summary>
@@ -31,4 +31,5 @@ sealed class NotificationDialogParam
 
         return result;
     }
+
 }
