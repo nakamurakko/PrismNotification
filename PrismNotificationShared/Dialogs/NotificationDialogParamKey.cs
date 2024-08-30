@@ -5,6 +5,7 @@
 /// </summary>
 public sealed class NotificationDialogParamKey
 {
+
     /// <summary>
     /// ダイアログに表示するメッセージ。
     /// </summary>
@@ -20,6 +21,6 @@ public sealed class NotificationDialogParamKey
     /// </summary>
     private NotificationDialogParamKey()
     {
-
     }
+
 }

@@ -1,8 +1,7 @@
 ﻿using Prism.Commands;
+using Prism.Dialogs;
 using Prism.Mvvm;
-using Prism.Services.Dialogs;
 using PrismNotification.WPF.Properties;
-using System;
 
 namespace PrismNotification.Dialogs;
 
@@ -12,8 +11,9 @@ namespace PrismNotification.Dialogs;
 /// <remarks>
 /// https://prismlibrary.com/docs/wpf/dialog-service.html
 /// </remarks>
-class NotificationDialogViewModel : BindableBase, IDialogAware
+internal class NotificationDialogViewModel : BindableBase, IDialogAware
 {
+
     public string Title => "Notification";
 
     public string YesButtonTitle => Resources.YES_BUTTON_TITLE;
@@ -78,7 +78,8 @@ class NotificationDialogViewModel : BindableBase, IDialogAware
         set => this.SetProperty(ref _closeDialogCommand, value);
     }
 
-    public event Action<IDialogResult> RequestClose;
+    // <https://docs.prismlibrary.com/docs/dialogs/dialog-aware.html#dialogcloselistener>
+    public DialogCloseListener RequestClose { get; }
 
     public NotificationDialogViewModel()
     {
@@ -87,7 +88,7 @@ class NotificationDialogViewModel : BindableBase, IDialogAware
 
     public virtual void RaiseRequestClose(IDialogResult dialogResult)
     {
-        this.RequestClose?.Invoke(dialogResult);
+        this.RequestClose.Invoke(dialogResult);
     }
 
     protected virtual void CloseDialog(string parameter)
@@ -135,4 +136,5 @@ class NotificationDialogViewModel : BindableBase, IDialogAware
         this.IsOkButtonVisible = dialogButtons.HasFlag(NotificationDialogButtons.Ok);
         this.IsCancelButtonVisible = dialogButtons.HasFlag(NotificationDialogButtons.Cancel);
     }
+
 }
