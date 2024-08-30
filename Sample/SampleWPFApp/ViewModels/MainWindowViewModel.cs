@@ -7,7 +7,8 @@ namespace SampleWPFApp.ViewModels;
 
 public sealed class MainWindowViewModel : BindableBase
 {
-    private IDialogService _dialogService;
+
+    private readonly IDialogService _dialogService;
 
     private string _title = "Sample WPF App";
     public string Title
@@ -67,13 +68,13 @@ public sealed class MainWindowViewModel : BindableBase
                 switch (dialogResult.Result)
                 {
                     case ButtonResult.Yes:
-                        ClickResult = "Yes button clicked.";
+                        this.ClickResult = "Yes button clicked.";
                         break;
                     case ButtonResult.No:
-                        ClickResult = "No button clicked.";
+                        this.ClickResult = "No button clicked.";
                         break;
                     case ButtonResult.Cancel:
-                        ClickResult = "Cancel button clicked.";
+                        this.ClickResult = "Cancel button clicked.";
                         break;
                     default:
                         break;
@@ -88,4 +89,5 @@ public sealed class MainWindowViewModel : BindableBase
     {
         NotificationDialogService.ShowDialog(this._dialogService, "OK Message.", NotificationDialogButtons.Ok);
     }
+
 }
