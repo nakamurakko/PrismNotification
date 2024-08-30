@@ -10,6 +10,7 @@ namespace SampleWPFApp;
 /// </summary>
 public partial class App
 {
+
     protected override Window CreateShell()
     {
         return this.Container.Resolve<MainWindow>();
@@ -20,4 +21,5 @@ public partial class App
         // https://prismlibrary.com/docs/wpf/dialog-service.html
         NotificationDialogService.RegisterDialog(containerRegistry);
     }
+
 }

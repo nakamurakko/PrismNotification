@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net7.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <AssemblyName>SampleWPFApp</AssemblyName>
     <Authors>nakamurakko</Authors>
     <Copyright>@ nakamurakko</Copyright>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Prism.Unity" Version="8.1.97" />
-    <PackageReference Include="PrismNotification.WPF" Version="1.0.7" />
+    <PackageReference Include="Prism.Unity" Version="9.0.537" />
+    <PackageReference Include="PrismNotification.WPF" Version="2.0.0" />
   </ItemGroup>
 </Project>
