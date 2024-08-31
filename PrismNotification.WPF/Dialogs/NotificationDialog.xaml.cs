@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace PrismNotification.Dialogs;
+namespace PrismNotification.WPF.Dialogs;
 
 /// <summary>
 /// NotificationDialog

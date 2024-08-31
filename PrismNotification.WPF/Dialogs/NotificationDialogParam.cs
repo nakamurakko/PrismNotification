@@ -1,6 +1,7 @@
 ﻿using Prism.Dialogs;
+using PrismNotification.Dialogs;
 
-namespace PrismNotification.Dialogs;
+namespace PrismNotification.WPF.Dialogs;
 
 /// <summary>
 /// NotificationDialog パラメーター用クラス。
