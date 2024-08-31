@@ -1,5 +1,5 @@
 ﻿using Prism.Ioc;
-using PrismNotification.Dialogs;
+using PrismNotification.WPF.Dialogs;
 using SampleWPFApp.Views;
 using System.Windows;
 
