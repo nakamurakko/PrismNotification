@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:prism="http://prismlibrary.com/"
-             xmlns:viewModels="clr-namespace:PrismNotification.Dialogs"
+             xmlns:viewModels="clr-namespace:PrismNotification.WPF.Dialogs"
              prism:ViewModelLocator.AutoWireViewModel="True"
              mc:Ignorable="d"
              d:DataContext="{d:DesignInstance viewModels:NotificationDialogViewModel}"
