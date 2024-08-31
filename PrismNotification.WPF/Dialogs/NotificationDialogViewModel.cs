@@ -84,7 +84,7 @@ internal class NotificationDialogViewModel : BindableBase, IDialogAware
 
     public NotificationDialogViewModel()
     {
-        this.CloseDialogCommand = new DelegateCommand<string>(CloseDialog);
+        this.CloseDialogCommand = new DelegateCommand<string>(this.CloseDialog);
     }
 
     public virtual void RaiseRequestClose(IDialogResult dialogResult)
