@@ -1,9 +1,10 @@
 ﻿using Prism.Commands;
 using Prism.Dialogs;
 using Prism.Mvvm;
+using PrismNotification.Dialogs;
 using PrismNotification.WPF.Properties;
 
-namespace PrismNotification.Dialogs;
+namespace PrismNotification.WPF.Dialogs;
 
 /// <summary>
 /// NotificationDialog 用 ViewModel。

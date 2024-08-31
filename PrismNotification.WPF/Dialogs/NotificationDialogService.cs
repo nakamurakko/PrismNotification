@@ -1,8 +1,9 @@
 ﻿using Prism.Dialogs;
 using Prism.Ioc;
+using PrismNotification.Dialogs;
 using System;
 
-namespace PrismNotification.Dialogs;
+namespace PrismNotification.WPF.Dialogs;
 
 /// <summary>
 /// NotificationDialog を使用するための処理一覧。
